@@ -45,9 +45,12 @@ function Homepage() {
       )}
 
       {/* map through all the receipt */}
-      {recipes && recipes.length > 0
-        ? recipes.map((item, index) => <RecipeItem />)
-        : null}
+
+      <div className="items">
+        {recipes && recipes.length > 0
+          ? recipes.map((item, index) => <RecipeItem key={index} item={item} />)
+          : null}
+      </div>
     </div>
   );
 }
