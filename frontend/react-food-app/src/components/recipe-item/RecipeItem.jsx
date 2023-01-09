@@ -13,9 +13,8 @@ const RecipeItem = (props) => {
       <div>
         <img src={image} alt="" />
       </div>
-
-      <tr>{id}</tr>
       <p>{title}</p>
+      <button>Add to Favourite</button>
     </div>
   );
 };
